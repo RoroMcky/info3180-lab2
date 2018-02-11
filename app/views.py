@@ -7,6 +7,7 @@ This file creates your application.
 
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+import datetime
 
 
 ###
@@ -23,12 +24,13 @@ def home():
 def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
-
-
+    
+@app.route('/profile')
+def profile():
+    return render_template('profile.html',date = format_date_joined())
 ###
 # The functions below should be applicable to all Flask apps.
 ###
-
 @app.route('/<file_name>.txt')
 def send_text_file(file_name):
     """Send your static text file."""
@@ -47,6 +49,10 @@ def add_header(response):
     response.headers['Cache-Control'] = 'public, max-age=0'
     return response
 
+def format_date_joined():
+    date_joined = datetime.date(2018, 2, 11)
+    date = "Joined "  + date_joined.strftime("%B, %Y") 
+    return date
 
 @app.errorhandler(404)
 def page_not_found(error):

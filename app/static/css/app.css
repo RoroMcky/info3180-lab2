@@ -1,3 +1,73 @@
 body {
     padding-top: 5rem;
 }
+.prof
+{
+text-align: center;
+background-color:#00b8e6;
+margin-left: 220px;
+margin-right:220px;
+padding-top: 50px;
+padding-bottom:50px;
+font-family:helvetica;
+color:white;
+border-top-right-radius:2%;
+border-top-left-radius: 2%;
+font-size:20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img
+{
+border-radius:100%;
+width:220px;
+height:270px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bio
+{
+text-align:center;
+padding-top:20px;
+font-family:helvetica;
+font-size:20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-left: 220px;
+margin-right:220px;
+padding-bottom:30px;
+border-bottom-left-radius:2%;
+border-bottom-right-radius:2%
+}
+#post
+{
+padding-right:50px;
+padding-left:50px;
+float:left;
+margin-left:130px;
+margin-right:0px;
+}
+#following
+{
+padding-right:80px;
+padding-left:10px;
+float:left;
+margin-right:60px;
+margin-left:0px;
+}
+#followers
+{
+padding-right:50px;
+padding-left:50px;
+float:left;
+margin-right:100px;
+margin-left:-140px;
+}
+button
+{
+    background-color:#00b8e6;
+	margin-bottom: 5px;
+	margin-top: 30px;
+	color:white;
+	font-family: helvetica;
+	width:20%;
+    height: 50px;
+    border-radius: 8px;
+}
